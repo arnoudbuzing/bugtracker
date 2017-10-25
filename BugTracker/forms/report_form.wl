@@ -31,15 +31,5 @@ CloudDeploy[
   "Description" -> "Report a bug"
  |>
 ],
-CloudObject[ FileNameJoin[{ $BugTrackerCloudBase , "report" }, OperatingSystem -> "Unix"] ]
+CloudObject[ FileNameJoin[{ $BugTrackerCloudBase , "forms", "report" }, OperatingSystem -> "Unix"] ]
 ]
-
-
-(*
-
-CloudDeploy[
- <| "summary" -> #summary |> ,
- CloudObject[ FileNameJoin[{ $BugTrackerCloudBase , "bugs", CreateUUID[] }, OperatingSystem -> "Unix"] ]
- ]
-
- *)
