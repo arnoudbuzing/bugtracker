@@ -9,7 +9,7 @@ CloudDeploy[
  Function[
   Module[{uuid,object},
   uuid = CreateUUID[];
-  object = CloudObject[ FileNameJoin[{ $BugTrackerCloudBase , "bugs", uuid }, OperatingSystem -> "Unix"] ];
+  object = CloudObject[ FileNameJoin[{ $BugTrackerCloudBase , "data", "reports", uuid }, OperatingSystem -> "Unix"] ];
   CloudPut[
    <|
     "uuid" -> uuid,
