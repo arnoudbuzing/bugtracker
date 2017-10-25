@@ -6,7 +6,7 @@ CloudDeploy[
   ,
   Function[
    Get["index.mx"];
-   UpdateSearchIndex[BugTracker`Private`index];
+   UpdateSearchIndex[ BugTracker`Private`index ];
    DumpSave[ "index.mx", BugTracker`Private`index ];
    ]
 ],
